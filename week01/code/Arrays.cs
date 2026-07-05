@@ -40,12 +40,12 @@ public static class Arrays
     {
         // TODO Problem 2 Start
         // Implememtation plan for the RotateListRight function:
-        // I implemented RotateListRight using list slicing techniques (GetRange, RemoveRange, and InsertRange) to efficiently rotate the elements in-place.
+        // I implemented RotateListRight using list slicing techniques using GetRange, RemoveRange, and InsertRange to rotate the elements in-place.
         // 1. Determine the split index where the list should be divided using data.Count - amount.
-        // 2. Extract the last 'amount' elements from the list using the GetRange method.
+        // 2. Extract the last amount elements from the list using the GetRange method.
         // 3. This will create a temporary list containing the elements that will move to the front.
         // 4. Remove these last amount elements from the original list using RemoveRange.
-        // 5. Insert the extracted elements at the beginning (index 0) of the original list using InsertRange.
+        // 5. Insert the extracted elements at the beginning index 0 of the original list using InsertRange.
         // 6. This will rotates the list to the right by the specified amount in place.
 
         int splitIndex = data.Count - amount;
